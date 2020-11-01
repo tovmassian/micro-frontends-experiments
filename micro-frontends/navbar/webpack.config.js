@@ -11,6 +11,9 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return webpackMerge.smart(defaultConfig, {
+    devServer: {
+      port: 8090,
+    },
     externals: ["react", "react-dom", "@material-ui/core"],
     // customizations can go here
   });

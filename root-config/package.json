@@ -2,6 +2,7 @@
   "name": "@tovmassian/root-config",
   "scripts": {
     "start": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
+    "start-full": "sh startDevFull.sh concurrently 'npm start' 'npm start --prfix /micro-frontends/annotations' 'npm start --prfix /micro-frontends/navbar'",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write \"./**\"",

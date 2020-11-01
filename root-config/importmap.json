@@ -6,8 +6,8 @@
     "@material-ui/core": "https://cdn.jsdelivr.net/npm/@material-ui/core@4.11.0/index.min.js",
     "@material-ui/styles": "https://cdn.jsdelivr.net/npm/@material-ui/styles@4.10.0/index.min.js",
     "@tovmassian/root-config": "http://localhost:9000/tovmassian-root-config.js",
-    "@tovmassian/navbar": "http://localhost:8080/tovmassian-navbar.js",
-    "@tovmassian/annotations": "http://localhost:8081/tovmassian-annotations.js",
-    "@tovmassian/trainings": "http://localhost:8082/js/app.js"
+    "@tovmassian/navbar": "http://localhost:8090/tovmassian-navbar.js",
+    "@tovmassian/annotations": "http://localhost:8091/tovmassian-annotations.js",
+    "@tovmassian/trainings": "http://localhost:8092/js/app.js"
   }
 }
