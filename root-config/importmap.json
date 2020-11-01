@@ -3,8 +3,6 @@
     "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.5/lib/system/single-spa.min.js",
     "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
     "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
-    "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
-    "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js",
     "@material-ui/core": "https://cdn.jsdelivr.net/npm/@material-ui/core@4.11.0/index.min.js",
     "@material-ui/styles": "https://cdn.jsdelivr.net/npm/@material-ui/styles@4.10.0/index.min.js",
     "@tovmassian/root-config": "http://localhost:9000/tovmassian-root-config.js",
