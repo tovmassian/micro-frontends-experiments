@@ -7,6 +7,11 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import EnhancedTable from "./enhanced-table.component";
 import { DatasetData } from "./enhanced-table.component";
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+
+// This is for using shared design-system
+// import { materialUI } from "@tovmassian/material-ui";
+// const { AppBar, Tabs, Tab, Typography, Box, makeStyles } = materialUI;
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -156,24 +161,31 @@ export default function SimpleTabs() {
 
   return (
     <>
-      <div className={classes.main}>
-        <AppBar position="static">
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label="simple tabs example"
-          >
-            <Tab label="Datasets" {...a11yProps(0)} />
-            <Tab label="Tasks" {...a11yProps(1)} />
-          </Tabs>
-        </AppBar>
-        <TabPanel value={value} index={0}>
-          <EnhancedTable rows={datasets} title={"Datasets"} />
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <EnhancedTable rows={tasks} title={"Tasks"} />
-        </TabPanel>
-      </div>
+
+      <BrowserRouter>
+        <div className={classes.main}>
+          <AppBar position="static">
+            <Tabs
+                value={value}
+                onChange={handleChange}
+                aria-label="simple tabs example"
+            >
+              <Tab label="Datasets" {...a11yProps(0)} component={Link} to="/annotations/datasets" />
+              <Tab label="Landmarks" {...a11yProps(1)}  component={Link} to="/annotations/landmarks"/>
+            </Tabs>
+          </AppBar>
+          <TabPanel value={value} index={0}>
+            <EnhancedTable rows={datasets} title={"Datasets"} />
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            {/*<EnhancedTable rows={tasks} title={"Tasks"} />*/}
+          </TabPanel>
+          <Switch>
+            <Route path="/annotations/datasets" />
+            <Route path="/annotations/tasks"  />
+          </Switch>
+        </div>
+      </BrowserRouter>
     </>
   );
 }

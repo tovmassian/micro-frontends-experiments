@@ -1,4 +1,3 @@
 .gitignore
 .prettierignore
 package-lock.json
-dist

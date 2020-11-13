@@ -1,9 +1,11 @@
 import './set-public-path';
 import Vue from 'vue';
 import singleSpaVue from 'single-spa-vue';
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default.css'
+import VueMaterial from 'vue-material';
+import 'vue-material/dist/vue-material.min.css';
+import 'vue-material/dist/theme/default.css';
+import router from './router';
+
 Vue.use(VueMaterial);
 
 import App from './App.vue';
@@ -24,6 +26,7 @@ const vueLifecycles = singleSpaVue({
         },
       });
     },
+    router,
   },
 });
 

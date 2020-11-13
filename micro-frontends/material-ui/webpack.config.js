@@ -4,16 +4,14 @@ const singleSpaDefaults = require("webpack-config-single-spa-react");
 module.exports = (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
     orgName: "tovmassian",
-    projectName: "navbar",
+    projectName: "material-ui",
     webpackConfigEnv,
     argv,
   });
 
   return webpackMerge.smart(defaultConfig, {
     devServer: {
-      port: 8090,
+      port: 8093,
     },
-    externals: ["react", "react-dom"],
-    // customizations can go here
   });
 };

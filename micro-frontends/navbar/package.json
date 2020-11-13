@@ -1,7 +1,6 @@
 {
   "name": "@tovmassian/navbar",
-  "repository": "git@github.com:react-microfrontends/navbar.git",
-  "author": "",
+  "author": "Khachatur Tovmasyan <khachatur.tovmasyan@gmail.com>",
   "license": "ISC",
   "version": "1.0.0",
   "description": "",

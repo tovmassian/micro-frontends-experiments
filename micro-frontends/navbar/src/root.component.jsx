@@ -12,12 +12,17 @@ import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Label from "@material-ui/icons/Label";
 import HomeIcon from "@material-ui/icons/Home";
 import ExtensionIcon from "@material-ui/icons/Extension";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
+
+// This is for using shared design-system
+// import { materialUI, materialUIIcons } from "@tovmassian/material-ui";
+// const { AppBar, Avatar, Toolbar, Typography, Drawer, List, ListItem, ListItemText, ListItemIcon, IconButton, withStyles } = materialUI;
+// const { MenuIcon, Label, HomeIcon, ExtensionIcon } = materialUIIcons;
 
 const drawerWidth = 240;
 const history = createBrowserHistory();
@@ -68,7 +73,7 @@ const NavBar = withStyles(styles)(({ classes, title, onMenuClick }) => (
         <Typography variant="h6" color="inherit" className={classes.flex} align={'left'}>
           {title}
         </Typography>
-        <Avatar alt="Remy Sharp" src="assets/logo_inverse.png" className={classes.headerBlock}/>
+        <Avatar alt="Remy Sharp" src="../assets/logo_inverse.png" className={classes.headerBlock}/>
         <Typography variant="h6" color="inherit" className={classes.flex} align={'right'}>
           AI Tools Platform
         </Typography>
@@ -120,20 +125,20 @@ const SideDrawer = withStyles(styles)(
           <ListItem
             button
             component={Link}
-            to="/trainings"
-            onClick={onItemClick("Trainings")}
+            to="/landmarks"
+            onClick={onItemClick("Landmarks")}
           >
             <ListItemIcon>
               <ExtensionIcon />
             </ListItemIcon>
-            <ListItemText>Trainings</ListItemText>
+            <ListItemText>Landmarks</ListItemText>
           </ListItem>
         </List>
       </Drawer>
       <main className={classes.content}>
         <Route exact path="/" />
         <Route path="/annotations" />
-        <Route path="/trainings" />
+        <Route path="/landmarks" />
       </main>
     </Router>
   )

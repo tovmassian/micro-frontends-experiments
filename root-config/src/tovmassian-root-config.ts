@@ -17,5 +17,9 @@ const applications = constructApplications({
 const layoutEngine = constructLayoutEngine({ routes, applications });
 
 applications.forEach(registerApplication);
-layoutEngine.activate();
-start();
+
+System.import("@tovmassian/material-ui").then(() => {
+  // Activate the layout engine once the styleguide CSS is loaded
+  layoutEngine.activate();
+  start();
+});
