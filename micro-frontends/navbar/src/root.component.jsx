@@ -3,26 +3,26 @@ import clsx from "clsx";
 import { Router, Route, Link } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
-import { withStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Avatar from "@material-ui/core/Avatar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Drawer from "@material-ui/core/Drawer";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import Label from "@material-ui/icons/Label";
-import HomeIcon from "@material-ui/icons/Home";
-import ExtensionIcon from "@material-ui/icons/Extension";
+// import { withStyles } from "@material-ui/core/styles";
+// import AppBar from "@material-ui/core/AppBar";
+// import Avatar from "@material-ui/core/Avatar";
+// import Toolbar from "@material-ui/core/Toolbar";
+// import Typography from "@material-ui/core/Typography";
+// import Drawer from "@material-ui/core/Drawer";
+// import List from "@material-ui/core/List";
+// import ListItem from "@material-ui/core/ListItem";
+// import ListItemText from "@material-ui/core/ListItemText";
+// import ListItemIcon from "@material-ui/core/ListItemIcon";
+// import IconButton from "@material-ui/core/IconButton";
+// import MenuIcon from "@material-ui/icons/Menu";
+// import Label from "@material-ui/icons/Label";
+// import HomeIcon from "@material-ui/icons/Home";
+// import ExtensionIcon from "@material-ui/icons/Extension";
 
 // This is for using shared design-system
-// import { materialUI, materialUIIcons } from "@tovmassian/material-ui";
-// const { AppBar, Avatar, Toolbar, Typography, Drawer, List, ListItem, ListItemText, ListItemIcon, IconButton, withStyles } = materialUI;
-// const { MenuIcon, Label, HomeIcon, ExtensionIcon } = materialUIIcons;
+import { materialUI, materialUIIcons } from "@tovmassian/material-ui";
+const { AppBar, Avatar, Toolbar, Typography, Drawer, List, ListItem, ListItemText, ListItemIcon, IconButton, withStyles } = materialUI;
+const { MenuIcon, Label, HomeIcon, ExtensionIcon } = materialUIIcons;
 
 const drawerWidth = 240;
 const history = createBrowserHistory();

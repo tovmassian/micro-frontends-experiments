@@ -16,8 +16,6 @@
     "coverage": "jest --coverage --passWithNoTests"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
     "@reach/router": "1.3.4",
     "clsx": "^1.1.1",
     "copy-webpack-plugin": "6.0.2",

@@ -15,6 +15,5 @@ module.exports = (webpackConfigEnv, argv) => {
     devServer: {
       port: 8091,
     },
-    externals: ["react", "react-dom", "@material-ui/core"],
   });
 };

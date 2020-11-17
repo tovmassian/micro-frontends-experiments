@@ -1,17 +1,20 @@
 import React from "react";
-import { makeStyles, Theme } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
+// import { makeStyles, Theme } from "@material-ui/core/styles";
+// import AppBar from "@material-ui/core/AppBar";
+// import Tabs from "@material-ui/core/Tabs";
+// import Tab from "@material-ui/core/Tab";
+// import Typography from "@material-ui/core/Typography";
+// import Box from "@material-ui/core/Box";
+// This is for using shared design-system
+// @ts-ignore
+import { materialUI } from "@tovmassian/material-ui";
+const { AppBar, Tabs, Tab, Typography, Box, StyledButton, Button, makeStyles } = materialUI;
+
 import EnhancedTable from "./enhanced-table.component";
 import { DatasetData } from "./enhanced-table.component";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 
-// This is for using shared design-system
-// import { materialUI } from "@tovmassian/material-ui";
-// const { AppBar, Tabs, Tab, Typography, Box, makeStyles } = materialUI;
+
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -46,7 +49,7 @@ function a11yProps(index: any) {
   };
 }
 
-const useStyles = makeStyles((theme: Theme) => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
@@ -164,6 +167,8 @@ export default function SimpleTabs() {
 
       <BrowserRouter>
         <div className={classes.main}>
+          <Button>Button</Button>
+          <StyledButton>StyledButton</StyledButton>
           <AppBar position="static">
             <Tabs
                 value={value}
